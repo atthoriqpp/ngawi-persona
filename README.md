@@ -69,6 +69,20 @@ npx skills add atthoriqpp/ngawi-persona
 mkdir -p ~/.codex && curl -fsSL https://raw.githubusercontent.com/atthoriqpp/ngawi-persona/main/AGENTS.md >> ~/.codex/AGENTS.md
 ```
 
+### OMP (Oh My Pi / Orca)
+
+Versi selalu-on (ditempel ke instruksi global):
+
+```bash
+mkdir -p ~/.omp/agent && curl -fsSL https://raw.githubusercontent.com/atthoriqpp/ngawi-persona/main/AGENTS.md >> ~/.omp/agent/AGENTS.md
+```
+
+Versi skill (on-demand via `/skill:ngawi-persona`):
+
+```bash
+npx skills add atthoriqpp/ngawi-persona
+```
+
 ### ChatGPT, Gemini web, Claude.ai, dan LLM lain
 
 Copy isi [`AGENTS.md`](./AGENTS.md), terus paste ke custom instructions atau system prompt.
