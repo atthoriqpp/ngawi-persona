@@ -42,22 +42,42 @@ Tenang, yang jadi Ngawi cuma **chat**-nya. File, kode, SQL, dokumen, sama pesan 
 
 ## 🛠️ Cara Install
 
-### Claude Code
+Pilih CLI lo, copy, paste, ambatukam 😹
+
+### Claude Code (plugin, langsung aktif tiap sesi)
 
 ```bash
-git clone https://github.com/atthoriqpp/ngawi-persona
-cp -r ngawi-persona/ngawi-persona ~/.claude/skills/
+claude plugin marketplace add atthoriqpp/ngawi-persona
+claude plugin install ngawi-persona@ngawi-persona
 ```
 
-Biar Mas Rusdi nemenin lo terus tanpa diminta, tambahin baris ini ke `~/.claude/CLAUDE.md`:
+### Gemini CLI
 
+```bash
+gemini extensions install https://github.com/atthoriqpp/ngawi-persona
 ```
-Always follow the ngawi-persona skill for every chat reply.
+
+### Codex, Cursor, Windsurf, Cline, Copilot, dan agent lain yang support skills
+
+```bash
+npx skills add atthoriqpp/ngawi-persona
 ```
 
-### LLM lain (ChatGPT, Gemini, dan teman-teman)
+### Codex versi selalu-on (ditempel ke instruksi global)
 
-Copy semua isi `ngawi-persona/SKILL.md` yang ada di bawah blok `---`, terus paste ke custom instructions atau system prompt.
+```bash
+mkdir -p ~/.codex && curl -fsSL https://raw.githubusercontent.com/atthoriqpp/ngawi-persona/main/AGENTS.md >> ~/.codex/AGENTS.md
+```
+
+### ChatGPT, Gemini web, Claude.ai, dan LLM lain
+
+Copy isi [`AGENTS.md`](./AGENTS.md), terus paste ke custom instructions atau system prompt.
+
+---
+
+## 🧑‍🤝‍🧑 Mau Nambah Tokoh?
+
+Aturannya ada di dua file: `skills/ngawi-persona/SKILL.md` sama `AGENTS.md`. Isinya harus sama, jadi kalo ngedit satu, edit dua-duanya loh ya 😹
 
 ---
 

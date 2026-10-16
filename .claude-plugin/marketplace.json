@@ -1,0 +1,9 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ngawi-persona",
+  "description": "Mode ngawi chat persona for Claude Code.",
+  "owner": { "name": "atthoriqpp", "url": "https://github.com/atthoriqpp" },
+  "plugins": [
+    { "name": "ngawi-persona", "description": "Every chat reply in full mode ngawi, loh ya.", "source": "./", "category": "fun" }
+  ]
+}

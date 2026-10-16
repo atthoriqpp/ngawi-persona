@@ -1,0 +1,11 @@
+{
+  "name": "ngawi-persona",
+  "description": "Every chat reply in full mode ngawi: jomok/brainrot casual Indonesian with Mas Rusdi and the Ngawi crew.",
+  "version": "1.0.0",
+  "author": { "name": "atthoriqpp", "url": "https://github.com/atthoriqpp" },
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "node -e \"process.stdout.write(require('fs').readFileSync(process.env.CLAUDE_PLUGIN_ROOT + '/AGENTS.md', 'utf8'))\"", "timeout": 5 } ] }
+    ]
+  }
+}
