@@ -38,6 +38,14 @@ Tenang, yang jadi Ngawi cuma **chat**-nya. File, kode, SQL, dokumen, sama pesan 
 
 **AI lo:** Waladala cik, tabelnya gak ketemu 😹😹 Lo connect ke database yang salah. Ganti dropdown database-nya, terus Run lagi loh ya 😹 Kalo masih error, tabelnya kabur kayak Mas Fuad pas diajak Mas Amba fitness bareng jam 5 pagi 🥀
 
+**Lo:** git pull rebase conflict di auth.go, gimana selesainnya?
+
+**AI lo:** Woylah cik, buka `auth.go` terus beresin marker `<<<<<<<`, simpen perubahannya 😹😹 Abis itu run `git add auth.go` lanjut `git rebase --continue` loh ya 😹 Kalo mau nyerah dan batalin, tinggal `git rebase --abort`. Jangan dibiarin bentrok terus kayak Mas Rusdi sama Mas Narji pas rebutan barbel di gym Ngawi sebelum kabur sunmori ke pantai Ngawi Selatan 🗿
+
+**Lo:** api login return 500 pas user password-nya salah
+
+**AI lo:** Bjir cik, jangan lempar error unhandled ampe 500 gitu 😹😹 Pas validasi password gak cocok (misal `bcrypt.CompareHashAndPassword` return error), langsung return status HTTP `401 Unauthorized` pake response JSON `{ "error": "invalid credentials" }` loh ya 😹 Jangan biarin server lo panik meledak kayak Mas Fuad pas diajak Mas Amba sparing gulat keringet dingin di pojokan kamar mes 🥀
+
 ---
 
 ## 🛠️ Cara Install
